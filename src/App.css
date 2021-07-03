@@ -1,0 +1,248 @@
+.App {
+  text-align: center;
+}
+
+/*background-image: url('./images/pic.jpg');
+background-repeat: no-repeat;
+
+*/
+
+/*bootstrap restyled*/
+@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Benne', serif;
+  font-size: 20px;
+  background-color: black;
+}
+img{
+  max-width: 20%;
+}
+.navbar a{
+  color: #f0f0f0;
+  text-decoration: none;
+}
+.navbar a:hover{
+  color: #ba873e;
+}
+a.nav-link.active{
+  padding: 5px;
+}
+li{
+  margin-top: 4px;
+}
+.navbar .navbar-brand {
+  font-family: 'Marck Script', cursive;
+  font-size: 30px;
+  font-weight: bold;
+}
+.navbar-nav .nav-item{
+  margin-left: 70px;
+  margin-top: 20px;
+}
+.navbar-nav .nav-item .nav-link{
+  color: #fff;
+  margin-bottom: 5px;
+}
+.navbar-nav .nav-item .nav-link:hover{
+  border-bottom: 2px solid orange;
+  color: #ba873e;
+}
+.navbar-nav .nav-item .btn{
+  color: #ffa500;
+  font-weight: bold;
+}
+.job-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ba873e;
+    padding-top: 28px;
+    margin-left: -10rem;
+}
+.main-nav{
+  padding: 7px 0;
+  border-bottom: 1px solid rgb(180, 180, 180);
+}
+
+.navbar-toggler-icon{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.home{
+  color: #fff;
+  padding: 90px;
+}
+.home img{
+  width: 100%;
+  height: 370px;
+  border-top: 2px solid #eeece8;
+  border-right: 2px solid #eeece8;
+  padding: 3px;
+}
+.email-phone{
+  display: flex;
+}
+.email-phone a{
+  color: #fff;
+  text-decoration: none;
+}
+.email-phone a:hover{
+  text-decoration: underline;
+}
+.email-phone .phone{
+  padding-left: 40px;
+}
+.phone{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 15px;
+}
+
+#about{
+  padding: 20px 100px;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+#about .btn{
+  font-size: 20px;
+}
+
+#skills {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 20px 0;
+}
+.skill-list {
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
+  font-size: 50px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.skill-list:hover{
+  background: #E5E7EB;
+}
+#recent-works{
+  background-color: #E5E7EB;
+  padding: 40px 20px;
+}
+
+.card-row{
+  background: #E5E7EB;
+}
+.card-detail-div{
+  padding-top: 20px;
+}
+.card-details{
+  background: gray;
+  padding: 20px; 
+  color: #f0f0f0; 
+  font-size: 17px;
+}
+
+.project-view-type{
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-evenly;
+  background: #E5E7EB;
+}
+.view-code{
+  color: black;
+}
+
+#contactme{
+  background-color: #f0f0f0;
+  padding: 10px 0;
+}
+.reach-out{
+  border-top: 2px solid #ffa500;
+  border-left: 2px solid #ffa500;
+  padding: 20px;
+  padding-top: 80px;
+}
+.reach-out a{
+  color: inherit;
+  padding-left: 5px;
+  text-decoration: none;
+}
+.reach-out a:hover{
+  text-decoration: underline;
+}
+
+.form-group{
+  margin-bottom: 200px;
+}
+.form-control:focus {
+  border-color: #ffa500;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: #f0f0f0;
+}
+
+.alert{
+  margin-top: 10px;
+}
+
+.footer{
+  text-align: center;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.socials p {
+  padding: 0 20px;
+  color: #fff;
+}
+.socials a{
+  color: #fff;
+}
+.socials a:hover{
+  color: black;
+}
+.mouse-indicator {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 9999;
+}
+
+@media only screen and (max-width: 414px) {
+  .home{
+    padding-top: 40px;
+  }
+
+  .home img{
+    width: 100%;
+  }
+  .job-title{
+    font-size: 25px;
+  }
+
+  .email-phone{
+    display: initial;
+  }
+  .email-phone .phone{
+    padding: 0;
+  }
+  #about{
+    padding: 20px;
+    text-align:initial;
+  }
+  .skill-list {
+    font-size: 30px;
+  }
+  #submit-btn{
+    width: 100%;
+    
+  }
+}
